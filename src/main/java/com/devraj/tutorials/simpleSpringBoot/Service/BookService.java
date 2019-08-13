@@ -3,6 +3,7 @@ package com.devraj.tutorials.simpleSpringBoot.Service;
 import com.devraj.tutorials.simpleSpringBoot.Dao.BookDao;
 import com.devraj.tutorials.simpleSpringBoot.Entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
@@ -12,6 +13,8 @@ import java.util.Collection;
 public class BookService {
 
     @Autowired
+    @Qualifier("DummyData")
+    // BookDao has many implementation. Tell Spring which one to pick.
     private BookDao bookDao;
 
     public Collection<Book> getBooks() {

@@ -1,6 +1,7 @@
 package com.devraj.tutorials.simpleSpringBoot.Dao;
 
 import com.devraj.tutorials.simpleSpringBoot.Entity.Book;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -10,6 +11,7 @@ import java.util.Map;
 // Annotation Repository means, it is telling Spring that this class is Dao
 // i.e responsible for talking to Database for CRUD operation.
 @Repository
+@Qualifier("DummyData")
 public class BookDaoDummyDatabaseImpl implements BookDao {
 
     private static Map<Integer, Book> books;
