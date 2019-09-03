@@ -11,3 +11,5 @@ This projects just created to teach how to get started in SpringBoot quick way.
 Here I'm creating Book service rest api. I have created CRUD rest api using SpringBoot.     
 The main packages as layers are Controller, Dao, Entity and Service. You can go inside and get
 overview.
+
+For creating Swagger2 UI in spring-boot, refer in config package.
