@@ -13,3 +13,8 @@ The main packages as layers are Controller, Dao, Entity and Service. You can go 
 overview.
 
 For creating Swagger2 UI in spring-boot, refer in config package.
+
+<h6> Steps to create docker image and run it</h6>
+* Build image: sudo docker build -t book_app:1.2 .
+* Run the container and it will start the app: sudo docker container run -p 80:8080 -it book_app:1.2
+* Access the app using api: localhost:80/books
